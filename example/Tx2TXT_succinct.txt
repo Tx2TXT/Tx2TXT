@@ -1,0 +1,2 @@
+The function calculates an amount using a user input value and a timestamp, and then transfers this amount of tokens from a user input address to another user input address. 
+Then the function calculates a second amount using the first amount, and then transfers this amount of tokens to a third-party address specified by the contract owner.
