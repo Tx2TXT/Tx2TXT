@@ -1,0 +1,2 @@
+VariableExchangeCore\.executeFundsTransfer(ExchangeCore\.Order,ExchangeCore\.Order).makerProtocolFee (../../large_dapps/WyvenExchange.sol#846) is too similar to ExchangeCore.executeFundsTransfer(ExchangeCore.Order,ExchangeCore.Order).takerProtocolFee (../../large_dapps/WyvenExchange.sol#856)
+Variable ExchangeCore.executeFundsTransfer(ExchangeCore.Order,ExchangeCore.Order).makerRelayerFee (../../large_dapps/WyvenExchange.sol#826) is too similar to ExchangeCore.executeFundsTransfer(ExchangeCore.Order,ExchangeCore.Order).takerRelayerFee (../../large_dapps/WyvenExchange.sol#836)
