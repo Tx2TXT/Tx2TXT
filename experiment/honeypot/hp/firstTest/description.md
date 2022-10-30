@@ -1,0 +1,1 @@
+If the value sent is greater than a constant, the function transfers the total balance of the contract to the user.

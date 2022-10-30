@@ -1,0 +1,1 @@
+The function calculates a random number using a timestamp, if the hash is equal to a user input value, the function transfers the total balance of the contract to the user.

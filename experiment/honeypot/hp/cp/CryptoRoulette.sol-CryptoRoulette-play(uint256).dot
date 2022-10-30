@@ -1,0 +1,35 @@
+digraph{
+0[label="Node Type: ENTRY_POINT 0
+"];
+0->6;
+
+6[label="Node Type: IF 6
+
+EXPRESSION:
+user input value == sha256(timestamp)
+
+IRs:
+TMP_14(bool) = number == secretNumber
+CONDITION TMP_14"];
+6->7[label="True"];
+6->8[label="False"];
+7[label="Node Type: EXPRESSION 7
+
+EXPRESSION:
+msg.sender.transfer(this.balance)
+
+IRs:
+REF_6(uint256) = SOLIDITY_CALL balance(address)(this)
+Transfer dest:msg.sender value:REF_6"];
+7->8;
+8[label="Node Type: END_IF 8
+"];
+8->9;
+9[label="Node Type: EXPRESSION 9
+
+EXPRESSION:
+shuffle()
+
+IRs:
+INTERNAL_CALL, CryptoRoulette.shuffle()()"];
+}

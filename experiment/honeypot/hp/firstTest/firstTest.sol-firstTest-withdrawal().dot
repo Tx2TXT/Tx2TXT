@@ -1,0 +1,34 @@
+digraph{
+0[label="Node Type: ENTRY_POINT 0
+"];
+0->1;
+1[label="Node Type: EXPRESSION 1
+
+EXPRESSION:
+adr = msg.sender
+
+IRs:
+adr(address) := msg.sender(address)"];
+1->2;
+2[label="Node Type: IF 2
+
+EXPRESSION:
+msg.value > constant
+
+IRs:
+TMP_6(bool) = msg.value > Limit
+CONDITION TMP_6"];
+2->4[label="True"];
+2->5[label="False"];
+4[label="Node Type: EXPRESSION 4
+
+EXPRESSION:
+msg.sender.send(this.balance)
+
+IRs:
+REF_2(uint256) = SOLIDITY_CALL balance(address)(this)
+TMP_10 = SEND dest:adr value:REF_2"];
+4->5;
+5[label="Node Type: END_IF 5
+"];
+}
