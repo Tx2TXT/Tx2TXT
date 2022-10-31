@@ -1,8 +1,9 @@
-The dir contains honeypot cases from HoneyBadger(https://github.com/christoftorres/HoneyBadger)
+The repo contains honeypot cases from HoneyBadger(https://github.com/christoftorres/HoneyBadger)
 
 We evaluated 28 general cases(https://github.com/christoftorres/HoneyBadger/tree/master/datasets/honeypots) and datasets of 282 contracts(https://github.com/christoftorres/HoneyBadger/tree/master/results/evaluation).
 
 Tx2TXT can cover 10/28 = **35.7%** general cases and total 166/282 = **58.9%** contracts in the dataset.
+The 282 cases are **duplicate** contracts of 28 general cases.
 
 
 
