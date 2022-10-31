@@ -1,4 +1,4 @@
-This dir contains 
+This repo contains 
 
 - Original solidity file: org_file.sol
 - Obfuscated file: obfus_file.sol
