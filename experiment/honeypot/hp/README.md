@@ -19,9 +19,9 @@ Tx2TXT can handle cases with malicious conditions like
 Those cases that Tx2TXT cannot cover are 
 
 - syntax(compiler) problems (TestBank.sol) 
-- endless calculation in a loop (RACEFORETH.sol)
+- iterative additions (RACEFORETH.sol)
 
 
 
-We focus on business logic instead of some basic syntax problems. Meanwhile, the calculation can be very complex and tricky to solve. As a result, Tx2TXT cannot cover these two kinds of honeypot cases.
+We focus on business logic instead of some basic syntax problems. Meanwhile, the calculation can be too complex and tricky to solve. As a result, Tx2TXT cannot cover these two kinds of honeypot cases.
 
