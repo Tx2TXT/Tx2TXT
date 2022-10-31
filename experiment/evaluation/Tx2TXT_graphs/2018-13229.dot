@@ -1,0 +1,46 @@
+digraph{
+0[label="Node Type: ENTRY_POINT 0
+"];
+0->5;
+1[label="Node Type: EXPRESSION 1
+
+EXPRESSION:
+state variable += user input value
+
+IRs:
+REF_22(uint256) -> balances[target]
+REF_22(-> balances) = REF_22 + mintedAmount"];
+1->2;
+2[label="Node Type: EXPRESSION 2
+
+EXPRESSION:
+state variable += user input value
+
+IRs:
+totalSupply(uint256) = totalSupply + mintedAmount"];
+2->3;
+3[label="Node Type: EXPRESSION 3
+
+EXPRESSION:
+Transfer(constant,state variable,user input value)
+
+IRs:
+Emit Transfer(0.owner.mintedAmount)"];
+3->4;
+4[label="Node Type: EXPRESSION 4
+
+EXPRESSION:
+Transfer(constant,user input address,user input value)
+
+
+IRs:
+Emit Transfer(owner.target.mintedAmount)"];
+5[label="Node Type: EXPRESSION 5
+
+EXPRESSION:
+onlyOwner()
+
+IRs:
+MODIFIER_CALL, Owner.onlyOwner()()"];
+5->1;
+}
