@@ -1,0 +1,130 @@
+digraph{
+0[label="Node Type: ENTRY_POINT 0
+"];
+0->19;
+1[label="Node Type: IF 1
+
+EXPRESSION:
+user specified balance < calculated value using user input value
+
+IRs:
+REF_51(uint256) -> balances[_from]
+TMP_94(uint256) = _feeSmt + _value
+TMP_95(bool) = REF_51 < TMP_94
+CONDITION TMP_95"];
+1->2[label="True"];
+1->3[label="False"];
+2[label="Node Type: EXPRESSION 2
+
+EXPRESSION:
+revert()()
+
+IRs:
+TMP_96(None) = SOLIDITY_CALL revert()()"];
+2->3;
+3[label="Node Type: END_IF 3
+"];
+3->4;
+4[label="Node Type: NEW VARIABLE 4
+
+EXPRESSION:
+var = user specified state variable
+
+IRs:
+REF_52(uint256) -> nonces[_from]
+nonce(uint256) := REF_52(uint256)"];
+4->5;
+5[label="Node Type: NEW VARIABLE 5
+
+EXPRESSION:
+var = keccak256 hash using user input value
+
+IRs:
+TMP_97(bytes32) = SOLIDITY_CALL keccak256()(_from,_to,_value,_feeSmt,nonce)
+h(bytes32) := TMP_97(bytes32)"];
+5->6;
+6[label="Node Type: IF 6
+
+EXPRESSION:
+user input value != ecrecover hash using keccak256 hash and user input value
+IRs:
+TMP_98(address) = SOLIDITY_CALL ecrecover(bytes32,uint8,bytes32,bytes32)(h,_v,_r,_s)
+TMP_99(bool) = _from != TMP_98
+CONDITION TMP_99"];
+6->7[label="True"];
+6->8[label="False"];
+7[label="Node Type: EXPRESSION 7
+
+EXPRESSION:
+revert()()
+
+IRs:
+TMP_100(None) = SOLIDITY_CALL revert()()"];
+7->8;
+8[label="Node Type: END_IF 8
+"];
+8->9;
+9[label="Node Type: IF 9
+
+EXPRESSION:
+calculated value using user input value < user specified balance || calculated value using user's property and user input value < user's property
+
+IRs:
+REF_53(uint256) -> balances[_to]
+TMP_101(uint256) = REF_53 + _value
+REF_54(uint256) -> balances[_to]
+TMP_102(bool) = TMP_101 < REF_54
+REF_55(uint256) -> balances[msg.sender]
+TMP_103(uint256) = REF_55 + _feeSmt
+REF_56(uint256) -> balances[msg.sender]
+TMP_104(bool) = TMP_103 < REF_56
+TMP_105(bool) = TMP_102 || TMP_104
+CONDITION TMP_105"];
+9->10[label="True"];
+9->11[label="False"];
+10[label="Node Type: EXPRESSION 10
+
+EXPRESSION:
+revert()()
+
+IRs:
+TMP_106(None) = SOLIDITY_CALL revert()()"];
+10->11;
+11[label="Node Type: END_IF 11
+"];
+11->12;
+12[label="Node Type: EXPRESSION 12
+
+EXPRESSION:
+user specified balance += user input value
+
+IRs:
+REF_57(uint256) -> balances[_to]
+REF_57(-> balances) = REF_57 + _value"];
+12->13;
+13[label="Node Type: EXPRESSION 13
+
+EXPRESSION:
+Transfer(user input address 0,user input address 1,user input value)
+
+IRs:
+Emit Transfer(_from._to._value)"];
+13->14;
+14[label="Node Type: EXPRESSION 14
+
+EXPRESSION:
+user's property += user input value
+
+IRs:
+REF_58(uint256) -> balances[msg.sender]
+REF_58(-> balances) = REF_58 + _feeSmt"];
+14->15;
+15[label="Node Type: EXPRESSION 15
+
+EXPRESSION:
+Transfer(user input address 0,user's address,user input value)
+
+IRs:
+Emit Transfer(_from.msg.sender._feeSmt)"];
+
+}

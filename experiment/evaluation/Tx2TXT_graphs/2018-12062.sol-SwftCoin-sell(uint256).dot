@@ -1,0 +1,63 @@
+digraph{
+0[label="Node Type: ENTRY_POINT 0
+"];
+0->1;
+1[label="Node Type: IF 1
+
+EXPRESSION:
+user's property < user input value
+
+IRs:
+REF_57(uint256) -> balanceOf[msg.sender]
+TMP_46(bool) = REF_57 < amount
+CONDITION TMP_46"];
+1->2[label="True"];
+1->3[label="False"];
+2[label="Node Type: THROW 2
+"];
+3[label="Node Type: END_IF 3
+"];
+3->4;
+4[label="Node Type: EXPRESSION 4
+
+EXPRESSION:
+this contract's balance += user input value
+
+IRs:
+REF_58(uint256) -> balanceOf[this]
+REF_58(-> balanceOf) = REF_58 + amount"];
+4->5;
+5[label="Node Type: EXPRESSION 5
+
+EXPRESSION:
+user's property -= user input value
+
+IRs:
+REF_59(uint256) -> balanceOf[msg.sender]
+REF_59(-> balanceOf) = REF_59 - amount"];
+5->6;
+6[label="Node Type: IF 6
+
+EXPRESSION:
+! msg.sender.send(user input value * state variable)
+
+IRs:
+TMP_47(uint256) = amount * sellPrice
+TMP_48 = SEND dest:msg.sender value:TMP_47
+TMP_49 = ! TMP_48 
+CONDITION TMP_49"];
+6->7[label="True"];
+6->8[label="False"];
+7[label="Node Type: THROW 7
+"];
+8[label="Node Type: EXPRESSION 8
+
+EXPRESSION:
+Transfer(msg.sender,this,user input value)
+
+IRs:
+Emit Transfer(msg.sender.this.amount)"];
+8->9;
+9[label="Node Type: END_IF 9
+"];
+}

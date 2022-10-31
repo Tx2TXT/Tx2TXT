@@ -1,0 +1,71 @@
+digraph{
+0[label="Node Type: ENTRY_POINT 0
+"];
+0->1;
+1[label="Node Type: EXPRESSION 1
+
+EXPRESSION:
+require(bool)(user input address != zero address)
+
+IRs:
+TMP_22(bool) = _to != 0
+TMP_23(None) = SOLIDITY_CALL require(bool)(TMP_22)"];
+1->2;
+2[label="Node Type: EXPRESSION 2
+
+EXPRESSION:
+require(bool)(not user specified state variable)
+
+IRs:
+REF_11(bool) -> frozen[_from]
+TMP_24 = ! REF_11 
+TMP_25(None) = SOLIDITY_CALL require(bool)(TMP_24)"];
+2->3;
+3[label="Node Type: EXPRESSION 3
+
+EXPRESSION:
+require(bool)(user specified balance >= user input value)
+
+IRs:
+REF_12(uint256) -> balanceOf[_from]
+TMP_26(bool) = REF_12 >= _value
+TMP_27(None) = SOLIDITY_CALL require(bool)(TMP_26)"];
+3->4;
+4[label="Node Type: EXPRESSION 4
+
+EXPRESSION:
+require(bool)(user specified balance + user input value > user specified balance)
+
+IRs:
+REF_13(uint256) -> balanceOf[_to]
+TMP_28(uint256) = REF_13 + _value
+REF_14(uint256) -> balanceOf[_to]
+TMP_29(bool) = TMP_28 > REF_14
+TMP_30(None) = SOLIDITY_CALL require(bool)(TMP_29)"];
+4->5;
+5[label="Node Type: EXPRESSION 5
+
+EXPRESSION:
+user specified balance -= user input value
+
+IRs:
+REF_15(uint256) -> balanceOf[_from]
+REF_15(-> balanceOf) = REF_15 - _value"];
+5->6;
+6[label="Node Type: EXPRESSION 6
+
+EXPRESSION:
+user specified balance += user input value
+
+IRs:
+REF_16(uint256) -> balanceOf[_to]
+REF_16(-> balanceOf) = REF_16 + _value"];
+6->7;
+7[label="Node Type: EXPRESSION 7
+
+EXPRESSION:
+Transfer(user input address 0,user input address 1,user input value)
+
+IRs:
+Emit Transfer(_from._to._value)"];
+}

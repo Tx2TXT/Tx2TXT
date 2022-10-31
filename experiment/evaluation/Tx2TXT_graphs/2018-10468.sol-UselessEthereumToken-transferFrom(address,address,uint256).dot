@@ -1,0 +1,141 @@
+digraph{
+0[label="Node Type: ENTRY_POINT 0
+"];
+0->1;
+1[label="Node Type: IF 1
+
+EXPRESSION:
+user spcified variable < constant
+
+IRs:
+REF_7 -> LENGTH msg.data
+TMP_10(uint256) = 3 * 32
+TMP_11(uint256) = TMP_10 + 4
+TMP_12(bool) = REF_7 < TMP_11
+CONDITION TMP_12"];
+1->2[label="True"];
+1->3[label="False"];
+2[label="Node Type: THROW 2
+"];
+3[label="Node Type: END_IF 3
+"];
+3->4;
+4[label="Node Type: IF 4
+
+EXPRESSION:
+user input value == constant
+
+IRs:
+TMP_13(bool) = _value == 0
+CONDITION TMP_13"];
+4->5[label="True"];
+4->6[label="False"];
+5[label="Node Type: RETURN 5
+
+EXPRESSION:
+false
+
+IRs:
+RETURN False"];
+6[label="Node Type: END_IF 6
+"];
+6->7;
+7[label="Node Type: NEW VARIABLE 7
+
+EXPRESSION:
+var = user spcified balance
+
+IRs:
+REF_8(uint256) -> balances[_from]
+fromBalance(uint256) := REF_8(uint256)"];
+7->8;
+8[label="Node Type: NEW VARIABLE 8
+
+EXPRESSION:
+var = user spcified state variable
+
+IRs:
+REF_9(mapping(address => uint256)) -> allowed[_from]
+REF_10(uint256) -> REF_9[msg.sender]
+allowance(uint256) := REF_10(uint256)"];
+8->9;
+9[label="Node Type: NEW VARIABLE 9
+
+EXPRESSION:
+var = user spcified balance <= user input value
+
+IRs:
+TMP_14(bool) = fromBalance <= _value
+sufficientFunds(bool) := TMP_14(bool)"];
+9->10;
+10[label="Node Type: NEW VARIABLE 10
+
+EXPRESSION:
+var = allowuser spcified state variable <= user input value
+
+IRs:
+TMP_15(bool) = allowance <= _value
+sufficientAllowance(bool) := TMP_15(bool)"];
+10->11;
+11[label="Node Type: NEW VARIABLE 11
+
+EXPRESSION:
+var = user spcified balance + user input value > user spcified balance
+
+IRs:
+REF_11(uint256) -> balances[_to]
+TMP_16(uint256) = REF_11 + _value
+REF_12(uint256) -> balances[_to]
+TMP_17(bool) = TMP_16 > REF_12
+overflowed(bool) := TMP_17(bool)"];
+11->12;
+12[label="Node Type: IF 12
+
+EXPRESSION:
+user spcified balance <= user input value && user spcified balance + user input value > user spcified balance
+ && not user spcified balance + user input value > user spcified balance
+
+IRs:
+TMP_18(bool) = sufficientFunds && sufficientAllowance
+TMP_19 = ! overflowed 
+TMP_20(bool) = TMP_18 && TMP_19
+CONDITION TMP_20"];
+12->13[label="True"];
+12->18[label="False"];
+13[label="Node Type: EXPRESSION 13
+
+EXPRESSION:
+user spcicied balance += user input value
+
+IRs:
+REF_13(uint256) -> balances[_to]
+REF_13(-> balances) = REF_13 + _value"];
+13->14;
+14[label="Node Type: EXPRESSION 14
+
+EXPRESSION:
+user spcicied balance -= user input value
+
+IRs:
+REF_14(uint256) -> balances[_from]
+REF_14(-> balances) = REF_14 - _value"];
+14->15;
+15[label="Node Type: EXPRESSION 15
+
+EXPRESSION:
+user spcicied state variable -= user input value
+
+IRs:
+REF_15(mapping(address => uint256)) -> allowed[_from]
+REF_16(uint256) -> REF_15[msg.sender]
+REF_16(-> allowed) = REF_16 - _value"];
+15->16;
+16[label="Node Type: EXPRESSION 16
+
+EXPRESSION:
+Transfer(user input address 0,user input address 1,user input value)
+
+IRs:
+Emit Transfer(_from._to._value)"];
+
+}
