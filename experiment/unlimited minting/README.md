@@ -1,4 +1,4 @@
-The dir contains the source code of Blacksmith, which is exploited in the Cover protocol.
+The repo contains the source code of Blacksmith, which is exploited in the Cover protocol.
 
 
 
