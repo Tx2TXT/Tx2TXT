@@ -1,0 +1,23 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x1\l2: %01 = #0x40\l4: MSTORE(%01, %00)\l5: [NO_SSA] DUP1\l6: [NO_SSA] PUSH1\l8: [NO_SSA] DUP2\l9: [NO_SSA] MSTORE\la: [NO_SSA] PUSH1\lc: [NO_SSA] ADD\ld: [NO_SSA] PUSH1\lf: [NO_SSA] PUSH1\l11: [NO_SSA] PUSH1\l13: [NO_SSA] PUSH1\l15: [NO_SSA] INVALID\l"]
+		block_16 [label="16: [NO_SSA] SUB\l17: [NO_SSA] AND\l18: [NO_SSA] DUP2\l19: [NO_SSA] MSTORE\l1a: [NO_SSA] PUSH1\l1c: [NO_SSA] ADD\l1d: [NO_SSA] PUSH1\l1f: [NO_SSA] DUP2\l20: [NO_SSA] MSTORE\l21: [NO_SSA] POP\l22: [NO_SSA] SWAP1\l23: [NO_SSA] JUMP\l"]
+		block_24 [label="24: [NO_SSA] INVALID\l"]
+		block_25 [label="25: [NO_SSA] INVALID\l"]
+		block_26 [label="26: [NO_SSA] PUSH6\l2d: [NO_SSA] PUSH20\l42: [NO_SSA] INVALID\l"]
+		block_43 [label="43: [NO_SSA] PUSH2\l46: [NO_SSA] PUSH19\l5a: [NO_SSA] PUSH21\l70: [NO_SSA] SHA3\l71: [NO_SSA] PUSH15\l81: [NO_SSA] SHA3\l82: [NO_SSA] PUSH27\l9e: [NO_SSA] PUSH4\la3: [NO_SSA] SHA3\la4: [NO_SSA] PUSH3\la8: [NO_SSA] PUSH15\lb8: [NO_SSA] PUSH23\ld0: [NO_SSA] INVALID\l"]
+		block_d1 [label="d1: [NO_SSA] DIFFICULTY\ld2: [NO_SSA] INVALID\l"]
+		block_d3 [label="d3: [NO_SSA] MSTORE8\ld4: [NO_SSA] INVALID\l"]
+		block_d5 [label="d5: [NO_SSA] INVALID\l"]
+		block_d6 [label="d6: [NO_SSA] INVALID\l"]
+		block_d7 [label="d7: [NO_SSA] GASLIMIT\ld8: [NO_SSA] MSTORE\ld9: [NO_SSA] INVALID\l"]
+		block_da [label="da: [NO_SSA] PUSH24\lf3: [NO_SSA] SHA3\lf4: [NO_SSA] PUSH16\l105: [NO_SSA] PUSH15\l115: [NO_SSA] PUSH4\l11a: [NO_SSA] MSTORE8\l11b: [NO_SSA] PUSH10\l126: [NO_SSA] PUSH10\l131: [NO_SSA] SHA3\l132: [NO_SSA] PUSH15\l142: [NO_SSA] ORIGIN\l143: [NO_SSA] ADDRESS\l144: [NO_SSA] GASPRICE\l145: [NO_SSA] SHA3\l146: [NO_SSA] GASLIMIT\l147: [NO_SSA] MSTORE\l148: [NO_SSA] NUMBER\l149: [NO_SSA] ORIGIN\l14a: [NO_SSA] ADDRESS\l14b: [NO_SSA] SHA3\l14c: [NO_SSA] PUSH16\l15d: [NO_SSA] SHA3\l15e: [NO_SSA] PUSH20\l173: [NO_SSA] INVALID\l"]
+		block_174 [label="174: [NO_SSA] ADDMOD\l175: [NO_SSA] TIMESTAMP\l176: [NO_SSA] PUSH12\l183: [NO_SSA] INVALID\l"]
+		block_184 [label="184: [NO_SSA] INVALID\l"]
+		block_185 [label="185: [NO_SSA] INVALID\l"]
+		block_186 [label="186: [NO_SSA] INVALID\l"]
+		block_187 [label="187: [NO_SSA] INVALID\l"]
+		block_188 [label="188: [NO_SSA] PUSH21\l"]
+	}
+}

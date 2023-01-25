@@ -1,0 +1,39 @@
+digraph "graph.cfg.gv" {
+subgraph global {
+1 [label="%7D = #0xF"]
+2 [label="%7E = TIMESTAMP()"]
+3 [label="%7C = #0x0"]
+
+5 [label="%84 = EQ(%83, %7C)"]
+
+
+8 [label="%89 = CALLER()"]
+
+9 [label="%8D = ADDRESS()"]
+10 [label="%8E = BALANCE(%8D)"]
+
+11 [label="%99 = 0x0"]
+
+12 [label="%9E = CALL(%91, %89, %8E, %96, %99, %96, %94)"]
+
+13 [label="STOP()"]
+
+1->5;
+2->5;
+3->5;
+
+5->8[label="false"];
+
+5->13[label="true"];
+
+9->10;
+
+8->12;
+10->12;
+11->12;
+
+
+
+
+}
+}

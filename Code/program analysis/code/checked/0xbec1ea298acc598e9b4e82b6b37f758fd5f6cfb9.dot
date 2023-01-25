@@ -1,0 +1,24 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x80\l2: %01 = #0x40\l4: MSTORE(%01, %00)\l5: %02 = CALLDATASIZE()\l6: %03 = #0x36\l8: JUMPI(%03, %02)\l"]
+		block_9 [label="9: %04 = #0x40\lb: %05 = MLOAD(%04)\lc: %06 = COINBASE()\ld: SWAP1(%05)\le: [NO_SSA] INVALID\l"]
+		block_f [label="f: %07 = DUP1(%05)\l10: %08 = ISZERO(%05)\l11: %09 = #0x8FC\l14: %0A = MUL(%09, %08)\l15: SWAP2(%06)\l16: %0B = #0x0\l18: %0C = DUP2(%06)\l19: %0D = DUP2(%0B)\l1a: %0E = DUP2(%06)\l1b: %0F = DUP6(%05)\l1c: [NO_SSA] DUP9\l1d: [NO_SSA] DUP9\l1e: [NO_SSA] CALL\l1f: [NO_SSA] SWAP4\l20: [NO_SSA] POP\l21: [NO_SSA] POP\l22: [NO_SSA] POP\l23: [NO_SSA] POP\l24: [NO_SSA] ISZERO\l25: [NO_SSA] DUP1\l26: [NO_SSA] ISZERO\l27: [NO_SSA] PUSH1\l29: [NO_SSA] JUMPI\l"]
+		block_2a [label="2a: [NO_SSA] RETURNDATASIZE\l2b: [NO_SSA] PUSH1\l2d: [NO_SSA] DUP1\l2e: [NO_SSA] RETURNDATACOPY\l2f: [NO_SSA] RETURNDATASIZE\l30: [NO_SSA] PUSH1\l32: [NO_SSA] REVERT\l"]
+		block_33 [label="33: [NO_SSA] JUMPDEST\l34: [NO_SSA] POP\l35: [NO_SSA] STOP\l"]
+		block_36 [label="36: JUMPDEST()\l37: STOP()\l"]
+		block_38 [label="38: [NO_SSA] INVALID\l"]
+		block_39 [label="39: [NO_SSA] LOG2\l3a: [NO_SSA] PUSH5\l40: [NO_SSA] INVALID\l"]
+		block_41 [label="41: [NO_SSA] SLT\l42: [NO_SSA] SHA3\l43: [NO_SSA] INVALID\l"]
+		block_44 [label="44: [NO_SSA] INVALID\l"]
+		block_45 [label="45: [NO_SSA] INVALID\l"]
+		block_46 [label="46: [NO_SSA] PUSH22\l5d: [NO_SSA] LOG4\l5e: [NO_SSA] INVALID\l"]
+		block_5f [label="5f: [NO_SSA] INVALID\l"]
+		block_60 [label="60: [NO_SSA] INVALID\l"]
+		block_61 [label="61: [NO_SSA] CREATE2\l62: [NO_SSA] SDIV\l63: [NO_SSA] PUSH5\l69: [NO_SSA] STOP\l"]
+		block_6a [label="6a: [NO_SSA] ADDMOD\l6b: [NO_SSA] EXP\l6c: [NO_SSA] STOP\l"]
+		block_6d [label="6d: [NO_SSA] CALLER\l"]
+	}
+	block_0 -> block_9 [color=red]
+	block_0 -> block_36 [color=green]
+}

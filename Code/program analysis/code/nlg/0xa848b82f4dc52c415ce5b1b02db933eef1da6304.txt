@@ -1,0 +1,1 @@
+The contract calculates a second amount using and the contract transfers this amount to.

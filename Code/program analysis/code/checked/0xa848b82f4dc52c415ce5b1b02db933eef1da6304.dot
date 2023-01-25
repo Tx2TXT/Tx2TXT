@@ -1,0 +1,25 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0xFA461E3200000000000000000000000000000000000000000000000000000000\l21: %01 = CALLVALUE()\l22: %02 = CALLDATALOAD(%01)\l23: %03 = LT(%02, %00)\l24: %04 = #0x12B\l27: JUMPI(%04, %03)\l"]
+		block_28 [label="28: %05 = #0x24\l2a: %06 = CALLDATALOAD(%05)\l2b: %07 = DUP1(%06)\l2c: %08 = #0x32\l2e: JUMPI(%08, %06)\l"]
+		block_2f [label="2f: %09 = CALLVALUE()\l30: %0A = CALLVALUE()\l31: REVERT(%0A, %09)\l"]
+		block_32 [label="32: JUMPDEST()\l33: %0B = #0x4\l35: %0C = CALLDATALOAD(%0B)\l36: %0D = SLT(%0C, %06)\l37: %0E = #0x75\l39: JUMPI(%0E, %0D)\l"]
+		block_3a [label="3a: %0F = #0xA9059CBB00000000000000000000000000000000000000000000000000000000\l5b: %10 = CALLVALUE()\l5c: MSTORE(%10, %0F)\l5d: %11 = CALLER()\l5e: %12 = #0x4\l60: MSTORE(%12, %11)\l61: %13 = #0x4\l63: %14 = CALLDATALOAD(%13)\l64: %15 = #0x24\l66: MSTORE(%15, %14)\l67: %16 = CALLVALUE()\l68: %17 = CALLVALUE()\l69: %18 = #0x44\l6b: %19 = CALLVALUE()\l6c: %1A = CALLVALUE()\l6d: %1B = #0x84\l6f: %1C = CALLDATALOAD(%1B)\l70: %1D = GAS()\l71: %1E = CALL(%1D, %1C, %1A, %19, %18, %17, %16)\l72: STOP()\l"]
+		block_73 [label="73: JUMPDEST()\l74: STOP()\l"]
+		block_75 [label="75: JUMPDEST()\l76: %1F = #0x128ACB0800000000000000000000000000000000000000000000000000000000\l97: %20 = CALLVALUE()\l98: MSTORE(%20, %1F)\l99: %21 = CALLER()\l9a: %22 = #0x4\l9c: MSTORE(%22, %21)\l9d: %23 = #0x1\l9f: %24 = #0x24\la1: MSTORE(%24, %23)\la2: %25 = #0x24\la4: %26 = CALLDATALOAD(%25)\la5: %27 = CALLVALUE()\la6: %28 = SUB(%27, %26)\la7: %29 = #0x44\la9: MSTORE(%29, %28)\laa: %2A = #0x1000276A4\lb0: %2B = #0x64\lb2: MSTORE(%2B, %2A)\lb3: %2C = #0xA0\lb5: %2D = #0x84\lb7: MSTORE(%2D, %2C)\lb8: %2E = #0x20\lba: %2F = #0xA4\lbc: MSTORE(%2F, %2E)\lbd: %30 = #0x84\lbf: %31 = CALLDATALOAD(%30)\lc0: %32 = #0xC4\lc2: MSTORE(%32, %31)\lc3: %33 = #0x40\lc5: %34 = CALLVALUE()\lc6: %35 = #0xE4\lc8: %36 = CALLVALUE()\lc9: %37 = CALLVALUE()\lca: %38 = #0xA4\lcc: %39 = CALLDATALOAD(%38)\lcd: %3A = GAS()\lce: %3B = CALL(%3A, %39, %37, %36, %35, %34, %33)\lcf: %3C = CALLVALUE()\ld0: %3D = MLOAD(%3C)\ld1: %3E = #0x4\ld3: %3F = CALLDATALOAD(%3E)\ld4: %40 = CALLVALUE()\ld5: %41 = SUB(%40, %3F)\ld6: %42 = SUB(%41, %3D)\ld7: %43 = #0xA9059CBB0000000000000000000000000000E0CA771E21BD00057F54A68C30D4\lf8: %44 = CALLVALUE()\lf9: MSTORE(%44, %43)\lfa: %45 = #0xE0CA771E21BD00057F54A68C30D400000000\l10d: %46 = #0x4\l10f: MSTORE(%46, %45)\l110: %47 = DUP1(%42)\l111: %48 = #0x24\l113: MSTORE(%48, %42)\l114: %49 = #0xC4\l116: %4A = CALLDATALOAD(%49)\l117: %4B = LT(%4A, %42)\l118: %4C = AND(%4B, %3B)\l119: %4D = CALLVALUE()\l11a: %4E = CALLVALUE()\l11b: %4F = #0x44\l11d: %50 = CALLVALUE()\l11e: %51 = CALLVALUE()\l11f: %52 = #0x84\l121: %53 = CALLDATALOAD(%52)\l122: %54 = GAS()\l123: %55 = CALL(%54, %53, %51, %50, %4F, %4E, %4D)\l124: %56 = AND(%55, %4C)\l125: %57 = #0x73\l127: JUMPI(%57, %56)\l"]
+		block_128 [label="128: %58 = CALLVALUE()\l129: %59 = CALLVALUE()\l12a: REVERT(%59, %58)\l"]
+		block_12b [label="12b: JUMPDEST()\l12c: %5A = #0x128ACB0800000000000000000000000000000000000000000000000000000000\l14d: %5B = CALLVALUE()\l14e: MSTORE(%5B, %5A)\l14f: %5C = ADDRESS()\l150: %5D = #0x4\l152: MSTORE(%5D, %5C)\l153: %5E = #0x20\l155: %5F = CALLDATALOAD(%5E)\l156: %60 = #0x44\l158: MSTORE(%60, %5F)\l159: %61 = #0xFFFD8963EFD1FC6A506488495D951D5263988D25\l16e: %62 = #0x64\l170: MSTORE(%62, %61)\l171: %63 = #0xA0\l173: %64 = #0x84\l175: MSTORE(%64, %63)\l176: %65 = #0x60\l178: %66 = #0xA4\l17a: MSTORE(%66, %65)\l17b: %67 = #0x60\l17d: %68 = #0x40\l17f: %69 = #0xC4\l181: CALLDATACOPY(%69, %68, %67)\l182: %6A = CALLVALUE()\l183: %6B = CALLVALUE()\l184: %6C = #0x124\l187: %6D = CALLVALUE()\l188: %6E = CALLVALUE()\l189: %6F = CALLVALUE()\l18a: %70 = CALLDATALOAD(%6F)\l18b: %71 = GAS()\l18c: %72 = CALL(%71, %70, %6E, %6D, %6C, %6B, %6A)\l18d: %73 = #0x73\l18f: JUMPI(%73, %72)\l"]
+		block_190 [label="190: %74 = CALLVALUE()\l191: %75 = CALLVALUE()\l192: REVERT(%75, %74)\l"]
+	}
+	block_75 -> block_128 [color=red]
+	block_75 -> block_73 [color=green]
+	block_12b -> block_73 [color=green]
+	block_28 -> block_32 [color=green]
+	block_32 -> block_3a [color=red]
+	block_0 -> block_28 [color=red]
+	block_28 -> block_2f [color=red]
+	block_0 -> block_12b [color=green]
+	block_32 -> block_75 [color=green]
+	block_12b -> block_190 [color=red]
+}

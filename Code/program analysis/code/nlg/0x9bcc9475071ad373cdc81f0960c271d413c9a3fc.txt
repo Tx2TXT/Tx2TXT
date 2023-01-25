@@ -1,0 +1,1 @@
+The contract calculates a second amount using the first amount and the contract transfers this amount to a third-party address.

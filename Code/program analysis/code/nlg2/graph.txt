@@ -1,0 +1,4 @@
+The contract calculates an amount using a state variable and a user input value and TIMESTAMP.
+Then the contract transfers this amount from a user input address to another user input address.
+The contract calculates an amount using a user input value and TIMESTAMP.
+Then the contract transfers this amount from a user input address to another user input address.

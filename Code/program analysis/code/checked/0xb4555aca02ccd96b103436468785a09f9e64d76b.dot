@@ -1,0 +1,22 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x80\l2: %01 = #0x40\l4: MSTORE(%01, %00)\l5: %02 = CALLDATASIZE()\l6: %03 = #0xA\l8: JUMPI(%03, %02)\l"]
+		block_9 [label="9: STOP()\l"]
+		block_a [label="a: JUMPDEST()\lb: %04 = CALLVALUE()\lc: %05 = DUP1(%04)\ld: %06 = ISZERO(%04)\le: %07 = #0x15\l10: JUMPI(%07, %06)\l"]
+		block_11 [label="11: %08 = #0x0\l13: %09 = DUP1(%08)\l14: REVERT(%08, %08)\l"]
+		block_15 [label="15: JUMPDEST()\l16: POP()\l17: %0A = #0x40\l19: %0B = MLOAD(%0A)\l1a: %0C = #0x5B3153F71AB7BE0A18D764665278DD7572153342\l3b: SWAP1(%0B)\l3c: %0D = CALLDATASIZE()\l3d: %0E = DUP1(%0D)\l3e: %0F = #0x0\l40: %10 = DUP4(%0B)\l41: CALLDATACOPY(%0B, %0F, %0D)\l42: %11 = #0x0\l44: %12 = DUP1(%11)\l45: %13 = DUP3(%0D)\l46: %14 = DUP5(%0B)\l47: %15 = DUP7(%0C)\l48: %16 = GAS()\l49: %17 = DELEGATECALL(%16, %0C, %0B, %0D, %11, %11)\l4a: %18 = RETURNDATASIZE()\l4b: SWAP2(%0D)\l4c: POP()\l4d: %19 = DUP2(%18)\l4e: %1A = #0x0\l50: %1B = DUP5(%0B)\l51: RETURNDATACOPY(%0B, %1A, %18)\l52: %1C = DUP1(%17)\l53: %1D = DUP1(%17)\l54: %1E = ISZERO(%17)\l55: %1F = #0x5B\l57: JUMPI(%1F, %1E)\l"]
+		block_58 [label="58: %20 = DUP3(%18)\l59: %21 = DUP5(%0B)\l5a: RETURN(%0B, %18)\l"]
+		block_5b [label="5b: JUMPDEST()\l5c: %22 = DUP3(%18)\l5d: %23 = DUP5(%0B)\l5e: REVERT(%0B, %18)\l"]
+		block_5f [label="5f: [NO_SSA] INVALID\l"]
+		block_60 [label="60: [NO_SSA] LOG2\l61: [NO_SSA] PUSH5\l67: [NO_SSA] INVALID\l"]
+		block_68 [label="68: [NO_SSA] SLT\l69: [NO_SSA] SHA3\l6a: [NO_SSA] INVALID\l"]
+		block_6b [label="6b: [NO_SSA] LOG4\l6c: [NO_SSA] PUSH8\l75: [NO_SSA] PUSH32\l"]
+	}
+	block_a -> block_11 [color=red]
+	block_0 -> block_9 [color=red]
+	block_15 -> block_5b [color=green]
+	block_15 -> block_58 [color=red]
+	block_0 -> block_a [color=green]
+	block_a -> block_15 [color=green]
+}

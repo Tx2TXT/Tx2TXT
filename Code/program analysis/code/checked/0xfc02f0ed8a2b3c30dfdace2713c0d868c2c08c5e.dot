@@ -1,0 +1,20 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = RETURNDATASIZE()\l1: %01 = RETURNDATASIZE()\l2: %02 = RETURNDATASIZE()\l3: %03 = RETURNDATASIZE()\l4: %04 = CALLDATASIZE()\l5: %05 = RETURNDATASIZE()\l6: %06 = RETURNDATASIZE()\l7: CALLDATACOPY(%06, %05, %04)\l8: %07 = #0x3D\la: %08 = #0x35\lc: %09 = CALLDATASIZE()\ld: CODECOPY(%09, %08, %07)\le: %0A = CALLDATASIZE()\lf: %0B = #0x3D\l11: %0C = ADD(%0B, %0A)\l12: %0D = RETURNDATASIZE()\l13: %0E = #0xCD80C916B1194BEB48ABF007D0B79A7238436D56\l28: %0F = GAS()\l29: %10 = DELEGATECALL(%0F, %0E, %0D, %0C, %03, %02)\l2a: %11 = RETURNDATASIZE()\l2b: %12 = RETURNDATASIZE()\l2c: SWAP4(%00)\l2d: %13 = DUP1(%00)\l2e: RETURNDATACOPY(%00, %00, %11)\l2f: %14 = #0x33\l31: JUMPI(%14, %10)\l"]
+		block_32 [label="32: REVERT(%01, %12)\l"]
+		block_33 [label="33: JUMPDEST()\l34: RETURN(%01, %12)\l"]
+		block_35 [label="35: [NO_SSA] INVALID\l"]
+		block_36 [label="36: [NO_SSA] PUSH13\l44: [NO_SSA] REVERT\l"]
+		block_45 [label="45: [NO_SSA] INVALID\l"]
+		block_46 [label="46: [NO_SSA] DUP10\l47: [NO_SSA] INVALID\l"]
+		block_48 [label="48: [NO_SSA] LOG4\l49: [NO_SSA] NUMBER\l4a: [NO_SSA] INVALID\l"]
+		block_4b [label="4b: [NO_SSA] SWAP7\l4c: [NO_SSA] INVALID\l"]
+		block_4d [label="4d: [NO_SSA] DUP3\l4e: [NO_SSA] MULMOD\l4f: [NO_SSA] PUSH25\l69: [NO_SSA] INVALID\l"]
+		block_6a [label="6a: [NO_SSA] CALLCODE\l6b: [NO_SSA] POP\l6c: [NO_SSA] DIV\l6d: [NO_SSA] CREATE\l6e: [NO_SSA] INVALID\l"]
+		block_6f [label="6f: [NO_SSA] CODESIZE\l70: [NO_SSA] INVALID\l"]
+		block_71 [label="71: [NO_SSA] MUL\l"]
+	}
+	block_0 -> block_32 [color=red]
+	block_0 -> block_33 [color=green]
+}

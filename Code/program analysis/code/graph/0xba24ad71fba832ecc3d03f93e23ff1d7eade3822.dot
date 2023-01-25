@@ -1,0 +1,9 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x8E88B80C0C4246E1855CE7DEE9E7D8C324261207\l15: %01 = ADDRESS()\l16: %02 = EQ(%01, %00)\l17: %03 = #0x80\l19: %04 = #0x40\l1b: MSTORE(%04, %03)\l1c: %05 = #0x0\l1e: %06 = DUP1(%05)\l1f: REVERT(%05, %05)\l"]
+		block_20 [label="20: [NO_SSA] INVALID\l"]
+		block_21 [label="21: [NO_SSA] LOG2\l22: [NO_SSA] PUSH5\l28: [NO_SSA] INVALID\l"]
+		block_29 [label="29: [NO_SSA] SLT\l2a: [NO_SSA] SHA3\l2b: [NO_SSA] PUSH28\l48: [NO_SSA] PUSH19\l"]
+	}
+}

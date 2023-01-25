@@ -1,0 +1,2 @@
+The contract transfers the balance of contract to a state variable address.
+The contract transfers the balance of contract to the user.

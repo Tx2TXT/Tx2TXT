@@ -1,0 +1,18 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x1\l2: %01 = #0x40\l4: MSTORE(%01, %00)\l5: [NO_SSA] DUP1\l6: [NO_SSA] PUSH1\l8: [NO_SSA] PUSH1\la: [NO_SSA] PUSH1\lc: [NO_SSA] PUSH1\le: [NO_SSA] INVALID\l"]
+		block_f [label="f: [NO_SSA] SUB\l10: [NO_SSA] AND\l11: [NO_SSA] DUP2\l12: [NO_SSA] MSTORE\l13: [NO_SSA] PUSH1\l15: [NO_SSA] ADD\l16: [NO_SSA] PUSH1\l18: [NO_SSA] DUP2\l19: [NO_SSA] MSTORE\l1a: [NO_SSA] PUSH1\l1c: [NO_SSA] ADD\l1d: [NO_SSA] PUSH1\l1f: [NO_SSA] DUP2\l20: [NO_SSA] MSTORE\l21: [NO_SSA] POP\l22: [NO_SSA] SWAP1\l23: [NO_SSA] JUMP\l"]
+		block_24 [label="24: [NO_SSA] INVALID\l"]
+		block_25 [label="25: [NO_SSA] PUSH20\l3a: [NO_SSA] PUSH3\l3e: [NO_SSA] PUSH19\l52: [NO_SSA] PUSH2\l55: [NO_SSA] GASPRICE\l56: [NO_SSA] SHA3\l57: [NO_SSA] PUSH14\l66: [NO_SSA] PUSH16\l77: [NO_SSA] GASPRICE\l78: [NO_SSA] SHA3\l79: [NO_SSA] GASLIMIT\l7a: [NO_SSA] MSTORE\l7b: [NO_SSA] NUMBER\l7c: [NO_SSA] ORIGIN\l7d: [NO_SSA] ADDRESS\l7e: [NO_SSA] SHA3\l7f: [NO_SSA] PUSH16\l90: [NO_SSA] SHA3\l91: [NO_SSA] PUSH20\la6: [NO_SSA] SWAP6\la7: [NO_SSA] INVALID\l"]
+		block_a8 [label="a8: [NO_SSA] MSTORE8\la9: [NO_SSA] INVALID\l"]
+		block_aa [label="aa: [NO_SSA] PUSH9\lb4: [NO_SSA] INVALID\l"]
+		block_b5 [label="b5: [NO_SSA] INVALID\l"]
+		block_b6 [label="b6: [NO_SSA] INVALID\l"]
+		block_b7 [label="b7: [NO_SSA] INVALID\l"]
+		block_b8 [label="b8: [NO_SSA] INVALID\l"]
+		block_b9 [label="b9: [NO_SSA] RETURNDATACOPY\lba: [NO_SSA] SWAP8\lbb: [NO_SSA] LOG4\lbc: [NO_SSA] INVALID\l"]
+		block_bd [label="bd: [NO_SSA] SWAP5\lbe: [NO_SSA] SLT\lbf: [NO_SSA] INVALID\l"]
+		block_c0 [label="c0: [NO_SSA] PUSH23\l"]
+	}
+}

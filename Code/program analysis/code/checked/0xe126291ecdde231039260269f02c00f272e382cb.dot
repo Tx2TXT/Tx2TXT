@@ -1,0 +1,27 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x80\l2: %01 = #0x40\l4: MSTORE(%01, %00)\l5: %02 = #0xAF1931C20EE0C11BEA17A41BFBBAD299B2763BC0\l1a: %03 = #0x0\l1c: %04 = DUP1(%03)\l1d: %05 = #0x100\l20: %06 = EXP(%05, %03)\l21: %07 = DUP2(%03)\l22: %08 = SLOAD(%03)\l23: %09 = DUP2(%06)\l24: %0A = #0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\l39: %0B = MUL(%0A, %06)\l3a: %0C = NOT(%0B)\l3b: %0D = AND(%0C, %08)\l3c: SWAP1(%06)\l3d: %0E = DUP4(%02)\l3e: %0F = #0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\l53: %10 = AND(%0F, %02)\l54: %11 = MUL(%10, %06)\l55: %12 = OR(%11, %0D)\l56: SWAP1(%03)\l57: SSTORE(%03, %12)\l58: POP()\l59: %13 = #0x0\l5b: [NO_SSA] INVALID\l"]
+		block_5c [label="5c: [NO_SSA] SWAP1\l5d: [NO_SSA] POP\l5e: [NO_SSA] PUSH1\l60: [NO_SSA] DUP2\l61: [NO_SSA] GT\l62: [NO_SSA] ISZERO\l63: [NO_SSA] PUSH2\l66: [NO_SSA] JUMPI\l"]
+		block_67 [label="67: [NO_SSA] PUSH1\l69: [NO_SSA] DUP1\l6a: [NO_SSA] SWAP1\l6b: [NO_SSA] SLOAD\l6c: [NO_SSA] SWAP1\l6d: [NO_SSA] PUSH2\l70: [NO_SSA] EXP\l71: [NO_SSA] SWAP1\l72: [NO_SSA] DIV\l73: [NO_SSA] PUSH20\l88: [NO_SSA] AND\l89: [NO_SSA] PUSH20\l9e: [NO_SSA] AND\l9f: [NO_SSA] PUSH2\la2: [NO_SSA] DUP3\la3: [NO_SSA] SWAP1\la4: [NO_SSA] DUP2\la5: [NO_SSA] ISZERO\la6: [NO_SSA] MUL\la7: [NO_SSA] SWAP1\la8: [NO_SSA] PUSH1\laa: [NO_SSA] MLOAD\lab: [NO_SSA] PUSH1\lad: [NO_SSA] PUSH1\laf: [NO_SSA] MLOAD\lb0: [NO_SSA] DUP1\lb1: [NO_SSA] DUP4\lb2: [NO_SSA] SUB\lb3: [NO_SSA] DUP2\lb4: [NO_SSA] DUP6\lb5: [NO_SSA] DUP9\lb6: [NO_SSA] DUP9\lb7: [NO_SSA] CALL\lb8: [NO_SSA] SWAP4\lb9: [NO_SSA] POP\lba: [NO_SSA] POP\lbb: [NO_SSA] POP\lbc: [NO_SSA] POP\lbd: [NO_SSA] ISZERO\lbe: [NO_SSA] DUP1\lbf: [NO_SSA] ISZERO\lc0: [NO_SSA] PUSH2\lc3: [NO_SSA] JUMPI\l"]
+		block_c4 [label="c4: [NO_SSA] RETURNDATASIZE\lc5: [NO_SSA] PUSH1\lc7: [NO_SSA] DUP1\lc8: [NO_SSA] RETURNDATACOPY\lc9: [NO_SSA] RETURNDATASIZE\lca: [NO_SSA] PUSH1\lcc: [NO_SSA] REVERT\l"]
+		block_cd [label="cd: [NO_SSA] JUMPDEST\lce: [NO_SSA] POP\l"]
+		block_cf [label="cf: [NO_SSA] JUMPDEST\ld0: [NO_SSA] POP\ld1: [NO_SSA] PUSH1\ld3: [NO_SSA] DUP1\ld4: [NO_SSA] PUSH2\ld7: [NO_SSA] PUSH1\ld9: [NO_SSA] CODECOPY\lda: [NO_SSA] PUSH1\ldc: [NO_SSA] RETURN\l"]
+		block_dd [label="dd: [NO_SSA] INVALID\l"]
+		block_de [label="de: [NO_SSA] PUSH1\le0: [NO_SSA] PUSH1\le2: [NO_SSA] MSTORE\le3: [NO_SSA] PUSH1\le5: [NO_SSA] INVALID\l"]
+		block_e6 [label="e6: [NO_SSA] SWAP1\le7: [NO_SSA] POP\le8: [NO_SSA] PUSH1\lea: [NO_SSA] DUP2\leb: [NO_SSA] GT\lec: [NO_SSA] PUSH1\lee: [NO_SSA] JUMPI\l"]
+		block_ef [label="ef: [NO_SSA] PUSH1\lf1: [NO_SSA] DUP1\lf2: [NO_SSA] REVERT\l"]
+		block_f3 [label="f3: [NO_SSA] JUMPDEST\lf4: [NO_SSA] PUSH1\lf6: [NO_SSA] DUP1\lf7: [NO_SSA] SWAP1\lf8: [NO_SSA] SLOAD\lf9: [NO_SSA] SWAP1\lfa: [NO_SSA] PUSH2\lfd: [NO_SSA] EXP\lfe: [NO_SSA] SWAP1\lff: [NO_SSA] DIV\l100: [NO_SSA] PUSH20\l115: [NO_SSA] AND\l116: [NO_SSA] PUSH20\l12b: [NO_SSA] AND\l12c: [NO_SSA] PUSH2\l12f: [NO_SSA] DUP3\l130: [NO_SSA] SWAP1\l131: [NO_SSA] DUP2\l132: [NO_SSA] ISZERO\l133: [NO_SSA] MUL\l134: [NO_SSA] SWAP1\l135: [NO_SSA] PUSH1\l137: [NO_SSA] MLOAD\l138: [NO_SSA] PUSH1\l13a: [NO_SSA] PUSH1\l13c: [NO_SSA] MLOAD\l13d: [NO_SSA] DUP1\l13e: [NO_SSA] DUP4\l13f: [NO_SSA] SUB\l140: [NO_SSA] DUP2\l141: [NO_SSA] DUP6\l142: [NO_SSA] DUP9\l143: [NO_SSA] DUP9\l144: [NO_SSA] CALL\l145: [NO_SSA] SWAP4\l146: [NO_SSA] POP\l147: [NO_SSA] POP\l148: [NO_SSA] POP\l149: [NO_SSA] POP\l14a: [NO_SSA] ISZERO\l14b: [NO_SSA] DUP1\l14c: [NO_SSA] ISZERO\l14d: [NO_SSA] PUSH1\l14f: [NO_SSA] JUMPI\l"]
+		block_150 [label="150: [NO_SSA] RETURNDATASIZE\l151: [NO_SSA] PUSH1\l153: [NO_SSA] DUP1\l154: [NO_SSA] RETURNDATACOPY\l155: [NO_SSA] RETURNDATASIZE\l156: [NO_SSA] PUSH1\l158: [NO_SSA] REVERT\l"]
+		block_159 [label="159: [NO_SSA] JUMPDEST\l15a: [NO_SSA] POP\l15b: [NO_SSA] POP\l15c: [NO_SSA] STOP\l"]
+		block_15d [label="15d: [NO_SSA] INVALID\l"]
+		block_15e [label="15e: [NO_SSA] LOG2\l15f: [NO_SSA] PUSH6\l166: [NO_SSA] SHA3\l167: [NO_SSA] INVALID\l"]
+		block_168 [label="168: [NO_SSA] INVALID\l"]
+		block_169 [label="169: [NO_SSA] SWAP15\l16a: [NO_SSA] INVALID\l"]
+		block_16b [label="16b: [NO_SSA] INVALID\l"]
+		block_16c [label="16c: [NO_SSA] INVALID\l"]
+		block_16d [label="16d: [NO_SSA] PUSH2\l170: [NO_SSA] INVALID\l"]
+		block_171 [label="171: [NO_SSA] PUSH31\l191: [NO_SSA] ORIGIN\l192: [NO_SSA] LOG2\l193: [NO_SSA] PUSH6\l19a: [NO_SSA] SHA3\l19b: [NO_SSA] PUSH28\l1b8: [NO_SSA] INVALID\l"]
+		block_1b9 [label="1b9: [NO_SSA] PUSH13\l"]
+	}
+}

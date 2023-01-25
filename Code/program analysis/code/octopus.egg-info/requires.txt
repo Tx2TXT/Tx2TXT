@@ -1,0 +1,4 @@
+z3-solver>=4.5
+requests>=2.18.4
+graphviz>=0.8.3
+wasm>=1.1

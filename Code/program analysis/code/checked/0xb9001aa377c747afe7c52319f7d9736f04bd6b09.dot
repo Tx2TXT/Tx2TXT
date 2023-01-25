@@ -1,0 +1,17 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x265C27C849B0E1A62636F6007E8A74DC2A2584AA\l15: %01 = RETURNDATASIZE()\l16: %02 = CALLDATASIZE()\l17: %03 = #0x25\l19: JUMPI(%03, %02)\l"]
+		block_1a [label="1a: %04 = RETURNDATASIZE()\l1b: %05 = RETURNDATASIZE()\l1c: %06 = RETURNDATASIZE()\l1d: %07 = RETURNDATASIZE()\l1e: %08 = CALLVALUE()\l1f: %09 = DUP7(%00)\l20: %0A = GAS()\l21: %0B = CALL(%0A, %00, %08, %07, %06, %05, %04)\l22: %0C = #0x31\l24: JUMP(%0C)\l"]
+		block_25 [label="25: JUMPDEST()\l26: %15 = CALLDATASIZE()\l27: %16 = RETURNDATASIZE()\l28: %17 = RETURNDATASIZE()\l29: CALLDATACOPY(%17, %16, %15)\l2a: %18 = RETURNDATASIZE()\l2b: %19 = RETURNDATASIZE()\l2c: %1A = CALLDATASIZE()\l2d: %1B = RETURNDATASIZE()\l2e: %1C = DUP6(%00)\l2f: %1D = GAS()\l30: %1E = DELEGATECALL(%1D, %00, %1B, %1A, %19, %18)\l"]
+		block_31 [label="31: JUMPDEST()\l32: %1F = RETURNDATASIZE()\l33: %20 = DUP3(%01)\l34: %21 = DUP1(%01)\l35: RETURNDATACOPY(%01, %01, %1F)\l36: %22 = #0x3C\l38: JUMPI(%22, %1E)\l"]
+		block_39 [label="39: %23 = RETURNDATASIZE()\l3a: %24 = DUP2(%01)\l3b: REVERT(%01, %23)\l"]
+		block_3c [label="3c: JUMPDEST()\l3d: %25 = RETURNDATASIZE()\l3e: %26 = DUP2(%01)\l3f: RETURN(%01, %25)\l"]
+	}
+	block_0 -> block_1a [color=red]
+	block_25 -> block_31 [color=cyan]
+	block_31 -> block_39 [color=red]
+	block_0 -> block_25 [color=green]
+	block_31 -> block_3c [color=green]
+	block_1a -> block_31 [color=blue]
+}

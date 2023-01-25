@@ -1,0 +1,4 @@
+[console_scripts]
+octopus_eth_evm = octopus.octopus_eth_evm:main
+octopus_wasm = octopus.octopus_wasm:main
+

@@ -1,0 +1,24 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x60\l2: %01 = #0x40\l4: MSTORE(%01, %00)\l5: %02 = CALLVALUE()\l6: %03 = ISZERO(%02)\l7: %04 = #0xB\l9: JUMPI(%04, %03)\l"]
+		block_a [label="a: INVALID()\l"]
+		block_b [label="b: JUMPDEST()\l"]
+		block_c [label="c: JUMPDEST()\ld: %05 = #0x83\lf: %06 = DUP1(%05)\l10: %07 = #0x1A\l13: %08 = #0x0\l15: CODECOPY(%08, %07, %05)\l16: %09 = #0x0\l18: RETURN(%09, %05)\l"]
+		block_19 [label="19: [NO_SSA] STOP\l"]
+		block_1a [label="1a: [NO_SSA] PUSH1\l1c: [NO_SSA] PUSH1\l1e: [NO_SSA] MSTORE\l"]
+		block_1f [label="1f: [NO_SSA] JUMPDEST\l20: [NO_SSA] PUSH1\l"]
+		block_22 [label="22: [NO_SSA] JUMPDEST\l23: [NO_SSA] PUSH1\l25: [NO_SSA] PUSH1\l27: [NO_SSA] PUSH1\l29: [NO_SSA] JUMP\l"]
+		block_2a [label="2a: [NO_SSA] JUMPDEST\l2b: [NO_SSA] SWAP1\l2c: [NO_SSA] POP\l2d: [NO_SSA] MSIZE\l2e: [NO_SSA] CALLDATASIZE\l2f: [NO_SSA] DUP2\l30: [NO_SSA] ADD\l31: [NO_SSA] PUSH1\l33: [NO_SSA] MSTORE\l34: [NO_SSA] CALLDATASIZE\l35: [NO_SSA] PUSH1\l37: [NO_SSA] DUP3\l38: [NO_SSA] CALLDATACOPY\l39: [NO_SSA] PUSH1\l3b: [NO_SSA] PUSH1\l3d: [NO_SSA] CALLDATASIZE\l3e: [NO_SSA] DUP4\l3f: [NO_SSA] DUP6\l40: [NO_SSA] PUSH1\l42: [NO_SSA] PUSH1\l44: [NO_SSA] GAS\l45: [NO_SSA] MUL\l46: [NO_SSA] DIV\l47: [NO_SSA] DELEGATECALL\l48: [NO_SSA] ISZERO\l49: [NO_SSA] PUSH1\l4b: [NO_SSA] JUMPI\l"]
+		block_4c [label="4c: [NO_SSA] PUSH1\l4e: [NO_SSA] PUSH1\l50: [NO_SSA] RETURN\l"]
+		block_51 [label="51: [NO_SSA] JUMPDEST\l52: [NO_SSA] INVALID\l"]
+		block_53 [label="53: [NO_SSA] JUMPDEST\l54: [NO_SSA] POP\l55: [NO_SSA] JUMP\l"]
+		block_56 [label="56: [NO_SSA] JUMPDEST\l57: [NO_SSA] STOP\l"]
+		block_58 [label="58: [NO_SSA] JUMPDEST\l59: [NO_SSA] PUSH20\l"]
+		block_6e [label="6e: [NO_SSA] JUMPDEST\l6f: [NO_SSA] SWAP1\l70: [NO_SSA] JUMP\l"]
+		block_71 [label="71: [NO_SSA] STOP\l"]
+	}
+	block_b -> block_c [color=cyan]
+	block_0 -> block_b [color=green]
+	block_0 -> block_a [color=red]
+}

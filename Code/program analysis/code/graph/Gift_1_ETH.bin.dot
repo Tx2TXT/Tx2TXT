@@ -1,0 +1,26 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x80\l2: %01 = #0x40\l4: MSTORE(%01, %00)\l5: %02 = #0x4\l7: %03 = CALLDATASIZE()\l8: %04 = LT(%03, %02)\l9: %05 = #0x41\lc: JUMPI(%05, %04)\l"]
+		block_d [label="d: %06 = #0x0\lf: %07 = CALLDATALOAD(%06)\l10: %08 = #0x100000000000000000000000000000000000000000000000000000000\l2e: SWAP1(%07)\l2f: %09 = DIV(%07, %08)\l30: %0A = #0xFFFFFFFF\l35: %0B = AND(%0A, %09)\l36: %0C = DUP1(%0B)\l37: %0D = #0xA6FBB05\l3c: %0E = EQ(%0D, %0B)\l3d: %0F = #0x46\l40: JUMPI(%0F, %0E)\l"]
+		block_41 [label="41: JUMPDEST()\l42: %5C = #0x0\l44: %5D = DUP1(%5C)\l45: REVERT(%5C, %5C)\l"]
+		block_46 [label="46: JUMPDEST()\l47: %12 = #0x72\l4a: %13 = #0x4\l4c: %14 = DUP1(%13)\l4d: %15 = CALLDATASIZE()\l4e: %16 = SUB(%15, %13)\l4f: %17 = #0x20\l51: %18 = DUP2(%16)\l52: %19 = LT(%16, %17)\l53: %1A = ISZERO(%19)\l54: %1B = #0x5C\l57: JUMPI(%1B, %1A)\l"]
+		block_58 [label="58: %1C = #0x0\l5a: %1D = DUP1(%1C)\l5b: REVERT(%1C, %1C)\l"]
+		block_5c [label="5c: JUMPDEST()\l5d: %1E = DUP2(%13)\l5e: %1F = ADD(%13, %16)\l5f: SWAP1(%13)\l60: %20 = DUP1(%13)\l61: %21 = DUP1(%13)\l62: %22 = CALLDATALOAD(%13)\l63: SWAP1(%13)\l64: %23 = #0x20\l66: %24 = ADD(%23, %13)\l67: SWAP1(%22)\l68: SWAP3(%1F)\l69: SWAP2(%13)\l6a: SWAP1(%24)\l6b: POP()\l6c: POP()\l6d: POP()\l6e: %25 = #0x74\l71: JUMP(%25)\l"]
+		block_72 [label="72: JUMPDEST()\l73: STOP()\l"]
+		block_74 [label="74: JUMPDEST()\l75: %26 = #0x4994F67DC55B09E814AB7FFC8DF3686B4AFB2BB53E60EAE97EF043FE03FB829\l96: %27 = #0x0\l98: %28 = DUP1(%27)\l99: %29 = #0x100\l9c: %2A = EXP(%29, %27)\l9d: %2B = DUP2(%27)\l9e: %2C = SLOAD(%27)\l9f: %2D = DUP2(%2A)\la0: %2E = #0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\lb5: %2F = MUL(%2E, %2A)\lb6: %30 = NOT(%2F)\lb7: %31 = AND(%30, %2C)\lb8: SWAP1(%2A)\lb9: %32 = DUP4(%26)\lba: %33 = #0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\lcf: %34 = AND(%33, %26)\ld0: %35 = MUL(%34, %2A)\ld1: %36 = OR(%35, %31)\ld2: SWAP1(%27)\ld3: SSTORE(%27, %36)\ld4: POP()\ld5: %37 = #0x1\ld7: %38 = #0x0\ld9: SWAP1(%37)\lda: %39 = SLOAD(%37)\ldb: SWAP1(%38)\ldc: %3A = #0x100\ldf: %3B = EXP(%3A, %38)\le0: SWAP1(%39)\le1: %3C = DIV(%39, %3B)\le2: %3D = #0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\lf7: %3E = AND(%3D, %3C)\lf8: %3F = #0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\l10d: %40 = AND(%3F, %3E)\l10e: %41 = #0x8FC\l111: %42 = #0xC8\l113: SWAP1(%41)\l114: %43 = DUP2(%42)\l115: %44 = ISZERO(%42)\l116: %45 = MUL(%44, %41)\l117: SWAP1(%42)\l118: %46 = #0x40\l11a: %47 = MLOAD(%46)\l11b: %48 = #0x0\l11d: %49 = #0x40\l11f: %4A = MLOAD(%49)\l120: %4B = DUP1(%4A)\l121: %4C = DUP4(%47)\l122: %4D = SUB(%47, %4A)\l123: %4E = DUP2(%4A)\l124: %4F = DUP6(%42)\l125: %50 = DUP9(%40)\l126: %51 = DUP9(%45)\l127: %52 = CALL(%45, %40, %42, %4A, %4D, %4A, %48)\l128: SWAP4(%40)\l129: POP()\l12a: POP()\l12b: POP()\l12c: POP()\l12d: %53 = ISZERO(%52)\l12e: %54 = DUP1(%53)\l12f: %55 = ISZERO(%53)\l130: %56 = #0x13D\l133: JUMPI(%56, %55)\l"]
+		block_134 [label="134: %57 = RETURNDATASIZE()\l135: %58 = #0x0\l137: %59 = DUP1(%58)\l138: RETURNDATACOPY(%58, %58, %57)\l139: %5A = RETURNDATASIZE()\l13a: %5B = #0x0\l13c: REVERT(%5B, %5A)\l"]
+		block_13d [label="13d: JUMPDEST()\l13e: POP()\l13f: POP()\l140: JUMP(%12)\l"]
+		block_141 [label="141: [NO_SSA] INVALID\l"]
+	}
+	block_74 -> block_13d [color=green]
+	block_0 -> block_41 [color=green]
+	block_74 -> block_134 [color=red]
+	block_5c -> block_74 [color=blue]
+	block_d -> block_41 [color=red]
+	block_46 -> block_58 [color=red]
+	block_d -> block_46 [color=green]
+	block_46 -> block_5c [color=green]
+	block_0 -> block_d [color=red]
+	block_13d -> block_72 [color=blue]
+}

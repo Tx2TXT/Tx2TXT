@@ -1,0 +1,8 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: [NO_SSA] GETPC\l1: %00 = CALLDATASIZE()\l2: [NO_SSA] DUP2\l3: [NO_SSA] DUP1\l4: [NO_SSA] CALLDATACOPY\l5: [NO_SSA] DUP1\l6: [NO_SSA] DUP1\l7: [NO_SSA] CALLDATASIZE\l8: [NO_SSA] DUP2\l9: [NO_SSA] PUSH20\l1e: [NO_SSA] GAS\l1f: [NO_SSA] DELEGATECALL\l20: [NO_SSA] RETURNDATASIZE\l21: [NO_SSA] SWAP2\l22: [NO_SSA] SWAP1\l23: [NO_SSA] DUP3\l24: [NO_SSA] DUP3\l25: [NO_SSA] DUP1\l26: [NO_SSA] RETURNDATACOPY\l27: [NO_SSA] PUSH1\l29: [NO_SSA] JUMPI\l"]
+		block_2a [label="2a: [NO_SSA] REVERT\l"]
+		block_2b [label="2b: [NO_SSA] JUMPDEST\l2c: [NO_SSA] RETURN\l"]
+	}
+}

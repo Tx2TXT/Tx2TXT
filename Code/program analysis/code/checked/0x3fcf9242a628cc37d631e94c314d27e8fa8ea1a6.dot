@@ -1,0 +1,14 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = CALLDATASIZE()\l1: %01 = #0x30\l3: JUMPI(%01, %00)\l"]
+		block_4 [label="4: %02 = CALLVALUE()\l5: %03 = RETURNDATASIZE()\l6: MSTORE(%03, %02)\l7: %04 = ADDRESS()\l8: %05 = #0x830D2D700A97AF574B186C80D40429385D24241565B08A7C559BA283A964D9B1\l29: %06 = #0x20\l2b: %07 = RETURNDATASIZE()\l2c: LOG2(%07, %06, %05, %04)\l2d: %08 = RETURNDATASIZE()\l2e: %09 = RETURNDATASIZE()\l2f: RETURN(%09, %08)\l"]
+		block_30 [label="30: JUMPDEST()\l31: %0A = RETURNDATASIZE()\l32: %0B = RETURNDATASIZE()\l33: %0C = RETURNDATASIZE()\l34: %0D = RETURNDATASIZE()\l35: %0E = CALLDATASIZE()\l36: %0F = RETURNDATASIZE()\l37: %10 = RETURNDATASIZE()\l38: CALLDATACOPY(%10, %0F, %0E)\l39: %11 = CALLDATASIZE()\l3a: %12 = RETURNDATASIZE()\l3b: %13 = #0xD94C0CE4F8EEFA4EBF44BF6665688EDEEF213B33\l50: %14 = GAS()\l51: %15 = DELEGATECALL(%14, %13, %12, %11, %0D, %0C)\l52: %16 = RETURNDATASIZE()\l53: %17 = RETURNDATASIZE()\l54: SWAP4(%0A)\l55: %18 = DUP1(%0A)\l56: RETURNDATACOPY(%0A, %0A, %16)\l57: %19 = #0x5B\l59: JUMPI(%19, %15)\l"]
+		block_5a [label="5a: REVERT(%0B, %17)\l"]
+		block_5b [label="5b: JUMPDEST()\l5c: RETURN(%0B, %17)\l"]
+	}
+	block_30 -> block_5a [color=red]
+	block_30 -> block_5b [color=green]
+	block_0 -> block_4 [color=red]
+	block_0 -> block_30 [color=green]
+}

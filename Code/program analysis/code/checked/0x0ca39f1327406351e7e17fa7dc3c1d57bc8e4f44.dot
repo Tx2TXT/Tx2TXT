@@ -1,0 +1,11 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x80\l2: %01 = #0x40\l4: MSTORE(%01, %00)\l5: %02 = #0x0\l7: %03 = #0x8A96CA9AB73BBDD9EEF39AA7D110246440ADA417\l1c: SWAP1(%02)\l1d: POP()\l1e: %04 = #0x40\l20: %05 = MLOAD(%04)\l21: %06 = CALLDATASIZE()\l22: %07 = #0x0\l24: %08 = DUP3(%05)\l25: CALLDATACOPY(%05, %07, %06)\l26: %09 = #0x0\l28: %0A = DUP1(%09)\l29: %0B = CALLDATASIZE()\l2a: %0C = DUP4(%05)\l2b: %0D = DUP6(%03)\l2c: %0E = GAS()\l2d: %0F = DELEGATECALL(%0E, %03, %05, %0B, %09, %09)\l2e: %10 = RETURNDATASIZE()\l2f: %11 = DUP1(%10)\l30: %12 = #0x0\l32: %13 = DUP5(%05)\l33: RETURNDATACOPY(%05, %12, %10)\l34: %14 = DUP2(%0F)\l35: %15 = #0x0\l37: %16 = DUP2(%0F)\l38: %17 = EQ(%0F, %15)\l39: %18 = #0x3F\l3b: JUMPI(%18, %17)\l"]
+		block_3c [label="3c: %19 = DUP2(%10)\l3d: %1A = DUP5(%05)\l3e: RETURN(%05, %10)\l"]
+		block_3f [label="3f: JUMPDEST()\l40: %1B = DUP2(%10)\l41: %1C = DUP5(%05)\l42: REVERT(%05, %10)\l"]
+		block_43 [label="43: [NO_SSA] STOP\l"]
+	}
+	block_0 -> block_3f [color=green]
+	block_0 -> block_3c [color=red]
+}

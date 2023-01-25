@@ -1,0 +1,22 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = #0x80\l2: %01 = #0x40\l4: MSTORE(%01, %00)\l5: %02 = CALLDATASIZE()\l6: %03 = #0xA\l8: JUMPI(%03, %02)\l"]
+		block_9 [label="9: STOP()\l"]
+		block_a [label="a: JUMPDEST()\lb: %04 = CALLDATASIZE()\lc: %05 = #0x0\le: %06 = DUP1(%05)\lf: CALLDATACOPY(%05, %05, %04)\l10: %07 = #0x20\l12: %08 = #0x40\l14: %09 = CALLDATASIZE()\l15: %0A = #0x0\l17: %0B = #0xF466F27FB811AB1572CA67AB438E966910F5D9C1\l2c: %0C = GAS()\l2d: %0D = DELEGATECALL(%0C, %0B, %0A, %09, %08, %07)\l2e: POP()\l2f: STOP()\l"]
+		block_30 [label="30: [NO_SSA] INVALID\l"]
+		block_31 [label="31: [NO_SSA] LOG2\l32: [NO_SSA] PUSH5\l38: [NO_SSA] INVALID\l"]
+		block_39 [label="39: [NO_SSA] SLT\l3a: [NO_SSA] SHA3\l3b: [NO_SSA] INVALID\l"]
+		block_3c [label="3c: [NO_SSA] BALANCE\l3d: [NO_SSA] INVALID\l"]
+		block_3e [label="3e: [NO_SSA] INVALID\l"]
+		block_3f [label="3f: [NO_SSA] JUMPI\l"]
+		block_40 [label="40: [NO_SSA] SWAP8\l41: [NO_SSA] INVALID\l"]
+		block_42 [label="42: [NO_SSA] INVALID\l"]
+		block_43 [label="43: [NO_SSA] CALL\l44: [NO_SSA] INVALID\l"]
+		block_45 [label="45: [NO_SSA] PUSH21\l5b: [NO_SSA] PUSH5\l61: [NO_SSA] STOP\l"]
+		block_62 [label="62: [NO_SSA] ADDMOD\l63: [NO_SSA] SIGNEXTEND\l64: [NO_SSA] STOP\l"]
+		block_65 [label="65: [NO_SSA] CALLER\l"]
+	}
+	block_0 -> block_a [color=green]
+	block_0 -> block_9 [color=red]
+}

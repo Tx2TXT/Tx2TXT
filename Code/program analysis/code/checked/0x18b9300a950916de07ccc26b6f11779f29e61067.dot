@@ -1,0 +1,10 @@
+digraph "graph.cfg.gv" {
+	subgraph global {
+		node [fontname=Courier fontsize=30.0 rank=same shape=box]
+		block_0 [label="0: %00 = CALLDATASIZE()\l1: %01 = RETURNDATASIZE()\l2: %02 = RETURNDATASIZE()\l3: CALLDATACOPY(%02, %01, %00)\l4: %03 = RETURNDATASIZE()\l5: %04 = RETURNDATASIZE()\l6: %05 = RETURNDATASIZE()\l7: %06 = CALLDATASIZE()\l8: %07 = RETURNDATASIZE()\l9: %08 = #0xD332254F274CC65AA11178B74734E2992B8F349E\l1e: %09 = GAS()\l1f: %0A = DELEGATECALL(%09, %08, %07, %06, %05, %04)\l20: %0B = RETURNDATASIZE()\l21: %0C = DUP3(%03)\l22: %0D = DUP1(%03)\l23: RETURNDATACOPY(%03, %03, %0B)\l24: SWAP1(%03)\l25: %0E = RETURNDATASIZE()\l26: SWAP2(%0A)\l27: %0F = #0x2B\l29: JUMPI(%0F, %0A)\l"]
+		block_2a [label="2a: REVERT(%03, %0E)\l"]
+		block_2b [label="2b: JUMPDEST()\l2c: RETURN(%03, %0E)\l"]
+	}
+	block_0 -> block_2b [color=green]
+	block_0 -> block_2a [color=red]
+}
