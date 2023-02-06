@@ -1,1 +1,0 @@
-The function transfers a state variable amount to the user.

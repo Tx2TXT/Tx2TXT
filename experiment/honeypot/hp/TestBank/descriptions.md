@@ -1,1 +1,0 @@
-The function transfers a user input value to the user.

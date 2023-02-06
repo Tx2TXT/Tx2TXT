@@ -1,1 +1,0 @@
-he function calculates an amount using local variable, and then transfers this amount to the user.

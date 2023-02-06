@@ -1,1 +1,0 @@
-The function transfers the total balance of the contract to the user.
