@@ -1,0 +1,2 @@
+The function transfers a user input amount from a third-party address to a user input address. 
+Then the function transfers another user input amount from another third-party address to the user input address.
