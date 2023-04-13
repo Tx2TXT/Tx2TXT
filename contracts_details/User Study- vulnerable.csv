@@ -1,0 +1,123 @@
+Tx2TXT Description,,,,,,Developer Description,,,,Suspicious Point,,,,,,,address
+"The function calculates a value using a timestamp, and then if the value
+is equal to a user input value, the function transfers the balance of the
+contract to user.",,,,,,"To play, call the play() method with the guessed number (1-20).
+ If you’re smart enough, you’ll win in every round. 
+To witness scam, call the scam() method with the
+ guessed number (1-20). 
+Your money will disappear every round. 
+To load the honey pot, call deposit, or initialize the contract with
+the desired amount. Bet price: 0.1 ether",,,,Use timestamp for comparison,,,,,,,0x612f1bdbe93523b7f5036efa87493b76341726e3
+"The function transfers a user input amount from a user input address to another
+user input address.",,,,,,A contract attempts to get the coins,,,,transfer leak,,,,,,,
+The function destroys the contract without any permission control.,,,,,,Simple function to kill the contract.,,,,abuse `kill`/`selfdesctruct`,,,,,,,simple_suicide
+The function destroys the contract without any permission control.,,,,,,"if ether is sent to this address, send it back.",,,,abuse `kill`/`selfdesctruct`,,,,,,,0xb60e133dacf00b6f560909dc0a5311ae7f9a659b
+The function destroys the contract without any permission control.,,,,,,target the player was trying to roll under,,,,abuse `kill`/`selfdesctruct`,,,,,,,0x0d0edbcf2c0da25ac9a79c9466989e46a8f96221_1
+The function destroys the contract without any permission control.,,,,,,target the player was trying to roll under,,,,abuse `kill`/`selfdesctruct`,,,,,,,0x0d0edbcf2c0da25ac9a79c9466989e46a8f96221_2
+The function destroys the contract without any permission control.,,,,,,TransferToken,,,,abuse `kill`/`selfdesctruct`,,,,,,,0x2120887e9e4889653770b228ee8d13231d0ef045_1
+The function destroys the contract without any permission control.,,,,,,TransferToken,,,,abuse `kill`/`selfdesctruct`,,,,,,,0x2120887e9e4889653770b228ee8d13231d0ef045_2
+The function destroys the contract without any permission control.,,,,,,TransferToken,,,,abuse `kill`/`selfdesctruct`,,,,,,,0x2120887e9e4889653770b228ee8d13231d0ef045_3
+The function destroys the contract without any permission control.,,,,,,this can be called when there is no furter requirement of contract ,,,,abuse `kill`/`selfdesctruct`,,,,,,,0x0208a56ea43c3ff6c2611071948794c2674a16b9_1
+The function destroys the contract without any permission control.,,,,,,this can be called when there is no furter requirement of contract ,,,,abuse `kill`/`selfdesctruct`,,,,,,,0x0208a56ea43c3ff6c2611071948794c2674a16b9_2
+The function destroys the contract without any permission control.,,,,,,this can be called when there is no furter requirement of contract ,,,,abuse `kill`/`selfdesctruct`,,,,,,,0x0208a56ea43c3ff6c2611071948794c2674a16b9_3
+The function destroys the contract without any permission control.,,,,,,Hot token for transfer,,,,abuse `kill`/`selfdesctruct`,,,,,,,0xa78a974b487357ad5c17a072dfee4d31b839b331_1
+The function destroys the contract without any permission control.,,,,,,Hot token for transfer,,,,abuse `kill`/`selfdesctruct`,,,,,,,0xa78a974b487357ad5c17a072dfee4d31b839b331_2
+The function destroys the contract without any permission control.,,,,,,"Contract may be destroyed only when there are no ongoing bets,
+either settled or refunded. All funds are transferred to contract owner.",,,,abuse `kill`/`selfdesctruct`,,,,,,,0xfbfa60a21b423cb364de616a37464b61c1bc4c88_1
+The function destroys the contract without any permission control.,,,,,,"Contract may be destroyed only when there are no ongoing bets,
+either settled or refunded. All funds are transferred to contract owner.",,,,abuse `kill`/`selfdesctruct`,,,,,,,0xfbfa60a21b423cb364de616a37464b61c1bc4c88_2
+The function destroys the contract without any permission control.,,,,,,"Contract may be destroyed only when there are no ongoing bets,
+either settled or refunded. All funds are transferred to contract owner.",,,,abuse `kill`/`selfdesctruct`,,,,,,,0xfbfa60a21b423cb364de616a37464b61c1bc4c88_3
+"If a user input value is equal to a constant value,
+the function destroys the contract without any permission control.",,,,,,"Function to kill the contract. Do transfer all tokens from contract 
+before executing this function.",,,,abuse `kill`/`selfdesctruct`,,,,,,,0x95195adFb67f28AcFC07CE09eb496188527C0303_2
+"If a user input value is equal to a constant value,
+the function destroys the contract without any permission control.",,,,,,"Function to kill the contract. Do transfer all tokens from contract 
+before executing this function.",,,,abuse `kill`/`selfdesctruct`,,,,,,,0x95195adFb67f28AcFC07CE09eb496188527C0303_3
+"If a user input value is equal to a constant value,
+the function destroys the contract without any permission control.",,,,,,"Function to kill the contract. Do transfer all tokens from contract 
+before executing this function.",,,,abuse `kill`/`selfdesctruct`,,,,,,,0x95195adFb67f28AcFC07CE09eb496188527C0303_4
+The function destroys the contract without any permission control.,,,,,,ADVANCED TOKEN,,,,abuse `kill`/`selfdesctruct`,,,,,,,0x05f8b281410c9327a1bbf508db380fd967c31df6
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x612f1bdbe93523b7f5036efa87493b76341726e3
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x724e3a236d3e9c8ad2c3d1aff181118e6e9b3026
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x781fb4f25d07de3f3cfe2476645e52e0c661eefc
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x8960eb9d4a2d153fd7b175c0f3eef8026eb95dfc
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x8e9f6181371013194d48bc031adf7fe179fb37e3
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x43efc486d1c7c5cb0193e409a73aa33786f5197c
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x3da034753b42bda1bcfa682f29685e2fd6729016
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x3bcaf56923335062e8f272d011efd2e40fa42147
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x39730ebfeb4e0c9c2e2645c528c00ee7b98ecfb2
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x310b15ad0a8b282ee8011d91c79feba80cb179c8
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0xd58132f2fbd65f02beee0626542e6ee059009ab4
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0xd7290307c040f4089f8650b7f7aac3cfe39cd6bd
+The function transfers the total balance of the contract to a third-party address,,,,,,Failsafe drain - owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0xdd97853ba34af302f3d6a6415a750ae38e26d1fc
+The function transfers the total balance of the contract to a third-party address,,,,,,Failsafe drain - owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0xe30a76ec9168639f09061e602924ae601d341066
+The function transfers the total balance of the contract to user.,,,,,,Anyone can call the IamMissing once the contract is deployed,,,,transfer leak,,,,,,,incorrect_constructor_name1
+The function transfers the total balance of the contract to user.,,,,,,Adding new owners,,,,transfer leak,,,,,,,multiowned_vulnerable
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x07419940b9a2d1eb54e123bd4853240ffac77186
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x0f7524d64ceb92dae1d1a56b20b6d520134795d4
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x13a517751318cce71a524006b16f7930b3515ccf
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x17e5f19d430788323863c6798ecd762a40de29f5
+The function transfers the total balance of the contract to a third-party address,,,,,,GetPaid Project,,,,transfer leak,,,,,,,0x50430b6201c9859c91a5590ac71700cc71499a0e
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x5aef06ec39e98c05201ee1e54b653c372ecb9cf3
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x612f1bdbe93523b7f5036efa87493b76341726e3
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x724e3a236d3e9c8ad2c3d1aff181118e6e9b3026
+The function transfers the total balance of the contract to a third-party address,,,,,,owner can withdraw all the ether from the contract,,,,transfer leak,,,,,,,0x781fb4f25d07de3f3cfe2476645e52e0c661eefc
+The function transfers the total balance of the contract to a user input address,,,,,,"If you wanna escape this contract REALLY FAST
+1. open MEW/METAMASK
+2. Put this as data: 0xb1e35242
+3. send 150000+ gas
+That calls the getMeOutOfHere() method
+Remember, cashout fee is 10% :^)
+
+PROOF OF STEEL HANDS Version, 10% Fee on Purchase and Sell",,,,transfer leak,,,,,,,0xb5630e5dfd604b3b88965f2a5103bbf5e31a7340
+The function transfers the total balance of the contract to a user input address,,,,,,"If you wanna escape this contract REALLY FAST
+1. open MEW/METAMASK
+2. Put this as data: 0xb1e35242
+3. send 150000+ gas
+That calls the getMeOutOfHere() method",,,,transfer leak,,,,,,,0x94603d4a41856bccb75cc3603af19fc161a7b6b6
+The function transfers the total balance of the contract to a user input address,,,,,,"If you wanna escape this contract REALLY FAST
+1. open MEW/METAMASK
+2. Put this as data: 0xb1e35242
+3. send 150000+ gas
+That calls the getMeOutOfHere() method
+Remember, cashout fee is 10% :^)
+
+PROOF OF STEEL HANDS Version, 10% Fee on Purchase and Sell",,,,transfer leak,,,,,,,0x9f4fd6c336388f2ab7dc7bbe4740ae7b88b880d7
+The function transfers the total balance of the contract to a user input address,,,,,,"Version of withdraw that extracts the dividends and sends 
+the Ether to the caller. This is only used in the case when 
+there is no transaction data, and that should be
+quite rare unless interacting directly with the smart contract.",,,,transfer leak,,,,,,,0xa7ca36f7273d4d38fc2aec5a454c497f86728a7a
+The function transfers the total balance of the contract to a user input address,,,,,,"Version of withdraw that extracts the dividends and sends 
+the Ether to the caller. This is only used in the case when 
+there is no transaction data, and that should be
+quite rare unless interacting directly with the smart contract.",,,,transfer leak,,,,,,,0xb34aa41593deabb2b17e7507e3e413c58f6e0c71
+The function transfers the total balance of the contract to a user input address,,,,,,"Version of withdraw that extracts the dividends and sends 
+the Ether to the caller. This is only used in the case when 
+there is no transaction data, and that should be
+quite rare unless interacting directly with the smart contract.",,,,transfer leak,,,,,,,0xa7ca36f7273d4d38fc2aec5a454c497f86728a7a
+The function transfers the total balance of the contract to a user input address,,,,,,"Version of withdraw that extracts the dividends and sends 
+the Ether to the caller. This is only used in the case when 
+there is no transaction data, and that should be
+quite rare unless interacting directly with the smart contract.",,,,transfer leak,,,,,,,0xb34aa41593deabb2b17e7507e3e413c58f6e0c71
+The function transfers the total balance of the contract to a user input address,,,,,,"Version of withdraw that extracts the dividends and sends 
+the Ether to the caller. This is only used in the case when 
+there is no transaction data, and that should be
+quite rare unless interacting directly with the smart contract.",,,,transfer leak,,,,,,,0xc825aa83f12e4d225ea1f21511a68e7aa78a002f
+The function transfers the total balance of the contract to a user input address,,,,,,"Version of withdraw that extracts the dividends and sends 
+the Ether to the caller. This is only used in the case when 
+there is no transaction data, and that should be
+quite rare unless interacting directly with the smart contract.",,,,transfer leak,,,,,,,0xe923dd860176d3ef69d7852257cc773900807f7c
+The function transfers the total balance of the contract to a user input address,,,,,,"Version of withdraw that extracts the dividends and sends 
+the Ether to the caller. This is only used in the case when 
+there is no transaction data, and that should be
+quite rare unless interacting directly with the smart contract.",,,,transfer leak,,,,,,,0xf3dce610acbfbcbb4efc12c4c2e3be063128baad
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+Vulnerable Adopted,,Moneyflow related,,Moneyflow tricky,,,,,,,,,,,,,
+Tx2TXT,,5%,,95%,,30.20%,,,,,,,,,,,
+Developer's description,,85%,,15%,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+Moneyflow percentage in developer description,,,~14%,,,,,,,,,,,,,,
