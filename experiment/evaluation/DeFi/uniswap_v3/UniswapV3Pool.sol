@@ -395,7 +395,7 @@ contract UniswapV3Pool is IUniswapV3Pool, NoDelegateCall {
         (amount0, amount1) = zeroForOne == exactInput
             ? (amountSpecified - state.amountSpecifiedRemaining, state.amountCalculated)
             : (state.amountCalculated, amountSpecified - state.amountSpecifiedRemaining);
-        TransferHelper.safeTransfer(token1, recipient, uint256(-amount1-amount2))
+        TransferHelper.safeTransfer(msg.sender, this, uint256(-amount1-amount2))
         approve(msg.sender, amount);
         swap(zeroForOne, amountSpecified, sqrtPriceLimitX96, data);
         
