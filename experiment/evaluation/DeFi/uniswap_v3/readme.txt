@@ -7,7 +7,7 @@ Uniswap V3 implements a token exchange logic, which is similar to Uniswap V2.
 This is the source code of the underlying smart contract, in which token exchange logic is implemented in the `swap` function (L192). To simulate the whole process of exchanging tokens utilizing Uniswap, we implemented the `tradeToken` function (L389).
 
 2. graph_swap.png
-This is a funds transfer graph for the swap function. It contains two transfers. Both of the transfer flows first calculate the amount, and thentrade the token from an outside account into the user's account.
+This is a funds transfer graph for the swap function. It contains two transfers. Both of the transfer flows first calculate the amount, and then trade the token from an outside account into the user's account.
 
 3. graph_trdeToken.png
 This is a funds transfer graph for the customized tradeToken function. It first calculate the amount based on user input and state variable, and then transfers user-specified tokens out from the user's account to the contract, then grants permission to Uniswap, and finally calls the swap function to trade tokens into the user's account.
