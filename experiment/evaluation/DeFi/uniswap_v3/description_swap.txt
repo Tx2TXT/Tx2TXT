@@ -1,0 +1,3 @@
+The function calculates an amount1 and an amount2 using a user input and a state variable,
+and then transfers amount1 from a third-party address to a user input address,
+and then transfers amount2 from another third-party address to the user input address.
