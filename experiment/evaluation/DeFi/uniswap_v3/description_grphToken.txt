@@ -1,0 +1,4 @@
+The function calculates an amount using a user input and a state variable, and then transfers this amount of tokens from user to the contract,
+and then calculates an amount1 and an amount2 using the user input and the state variable,
+and then transfers amount1 from a third-party address to a user input address,
+and then transfers amount2 from another third-party address to the user input address.
